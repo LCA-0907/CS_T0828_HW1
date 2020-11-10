@@ -54,13 +54,14 @@ working_dir
 ## Training
 ### Train models 
 To train the model, run following commands.
-`$ python3 code.py`
-
+```
+$ python3 code.py
+```
 It will generate 2 types of file after training:
-1. *EpochN.pkl* in directory models for N in 0~(epoch number-1), saves the model after each epoch. 
-2. loss_acc.csv, saves the training loss of each epoch
+1. *EpochN.pkl* in directory models for N in 0~(epoch number-1) are the model saved after each epoch. 
+2. *loss_acc.csv* saves the training loss of each epoch
 
-If there is no file named *label_id* which saves the corresponding car label and id, it will also generate the file. The csv file should be like this:
+If there is no file named *label_id* in the working directory which saves the corresponding car label and id, it will also generate the file. The csv file should be like this:
 
 | None                          | 0   |
 | ----------------------------- | --- |
@@ -68,14 +69,13 @@ If there is no file named *label_id* which saves the corresponding car label and
 | Ferrari 458 Italia Coupe 2012 | 1   |
 |    ...                        | ... |
 ### Load old models and train for more epochs
-To load existed model and continue training, run the commands followed:
+To load existed model and continue training, run the commands followed.
+After training, it will generate models named as *Epoch+N.pkl* for N in 0~(epoch num-1)in the models directory.
 ```
 $ python3 code.py loadmodel path_to_existed_model
 ```
 ***warning:***
-It will overwrite the lossacc.csv file, so you have to rename the old file if want to keep the statistics
-
-After training, it will generate models named as *Epoch+N.pkl* for N in 0~(epoch num-1)in the models directory.
+The lossacc.csv file will be overwirted, so if you want to keep the statistics, please rename the old file.
 
 ## Testing
 To test the model, run following commands:
