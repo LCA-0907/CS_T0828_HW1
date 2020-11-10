@@ -79,7 +79,7 @@ The lossacc.csv file will be overwirted, so if you want to keep the statistics, 
 
 ## Testing
 To test the model, run following commands:
-`$ python3 code.py test path_to _model`
+`$ python3 code.py test path_to_model`
 
 It will generate output.txt like this:
 | id     | label                            |
