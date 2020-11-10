@@ -23,7 +23,7 @@ My Environment settings are below:
 * torch = 1.7.0
 * torchvision = 0.8.1
 
-please check the veision of packges before running the code especially torch and torchvision, or the code may not work.
+please check the version of packges before running the code especially torch and torchvision, or the code may not work.
 
 ## Dataset Preparation
 Please download the dataset from https://www.kaggle.com/c/cs-t0828-2020-hw1/data
