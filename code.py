@@ -100,6 +100,7 @@ def initialize_model(model_name, num_classes, feature_extract, use_pretrained=Tr
         exit()
 
     return model_ft
+
 # Dataloader
 train_preprocess = transforms.Compose([
     transforms.Resize((512,512)),
@@ -229,7 +230,7 @@ if __name__ == "__main__":
     file = [os.path.join("./training_data/training_data", i) for i in file]
     file_train = file[:]
     print(len(file_train))
-    np.save("file_train.npy", file_train)
+    # np.save("file_train.npy", file_train)
 
     ## for labels
     label_series = Series.to_numpy(label)
@@ -239,7 +240,7 @@ if __name__ == "__main__":
     number = np.array(number)
     number_train = number[:]
     print(number_train.shape)
-    np.save("number_train.npy", number_train)
+    # np.save("number_train.npy", number_train)
 
     # load data
     print("Initializing Datasets and Dataloaders...")
