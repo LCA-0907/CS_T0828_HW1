@@ -72,9 +72,9 @@ To load existed model and continue training, run the commands followed:
 ```
 $ python3 code.py loadmodel path_to_existed_model
 ```
-***warning
+***warning***
 It will overwrite the lossacc.csv file, so you have to rename the old file if want to keep the statistics
-***
+*************
 
 After training, it will generate models named as *Epoch+N.pkl* for N in 0~(epoch num-1)in the models directory.
 
