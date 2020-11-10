@@ -11,10 +11,10 @@ The following specs were used to create the original solution.
 ## Reproducing Submission
 To Reproduct the submission, do the folowed steps
 
-1. [ Environment Setting](https://hackmd.io/g1ODkUY0Qei56uq4hirIUw#Environment-Setting)
-2. [Dataset Preparation](https://hackmd.io/g1ODkUY0Qei56uq4hirIUw?both#Dataset-Preparation)
-3. [Training](https://hackmd.io/g1ODkUY0Qei56uq4hirIUw?both#Training)
-4. [Testing](https://hackmd.io/g1ODkUY0Qei56uq4hirIUw?both#Testing)
+1. [ Environment Setting](#Environment-Setting)
+2. [Dataset Preparation](#Dataset-Preparation)
+3. [Training](#Training)
+4. [Testing](#Testing)
 
 ## Environment Setting
 My Environment settings are below:
